@@ -251,7 +251,6 @@ table {
   padding: 0;
 }
 .cov-vue-date {
-  display: inline-block;
   color: #5D5D5D;
 }
 .button-box {
