@@ -391,6 +391,12 @@ exports.default = {
       type: Object,
       required: true
     },
+    options: {
+      type: Object,
+      default: function () {
+          return {}
+      }
+    },
     option: {
       type: Object,
       default: function _default() {
@@ -489,6 +495,10 @@ exports.default = {
       dayList: [],
       selectedDays: []
     };
+  },
+
+  mounted: function () {
+    Object.assign(this.option, this.options);
   },
 
   methods: {
